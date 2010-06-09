@@ -1,0 +1,29 @@
+#smart_status_bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  color: black;
+  background: #ebebeb;
+  font: 11px arial;
+  max-width: 30%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  z-index: 999999;
+  pointer-events: none;
+  -webkit-transition-property: opacity;
+  -webkit-transition-duration: 0.3s;
+  text-shadow: 1px 1px 1px white;
+  padding: 3px;
+  border: 1px solid #b3b3b3;
+  border-radius: 0 4px 0 0;
+  -webkit-transition-timing-function: ease-out;
+}
+
+#smart_status_bar[data-state="on"] {
+  opacity: 1;
+}
+
+#smart_status_bar[data-state="off"] {
+  opacity: 0;
+}
